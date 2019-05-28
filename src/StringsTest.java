@@ -25,9 +25,9 @@ public class StringsTest {
 	}
 	
 	@Test
-	public void shouldBeGreenWhenLettersOnEvenIndexMatch() {
-		String result = word.listLettersOnEvenIndexes("Ervin");
-		assertEquals("E v n", result);
+	public void shouldBeGreenWhenNumberOfUpperCaseLettersMatch() {
+		int result = word.numberOfUppercaseLetters("Ervin");
+		assertEquals(1, result);
 	}
 
 }
