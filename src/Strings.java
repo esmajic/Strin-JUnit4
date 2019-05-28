@@ -29,11 +29,25 @@ public class Strings {
 		return counter2;
 
 	}
+
 	public void listLettersOnEvenIndexes(String word) {
 
 		System.out.print("Letters on even indexes are:  ");
 		for (int i = 0; i < word.length(); i++) {
 			if (i % 2 != 0) {
+				System.out.print(word.charAt(i) + " ");
+			}
+
+		}
+		System.out.println();
+
+	}
+
+	public void listLettersOnOddIndexes(String word) {
+
+		System.out.print("Letters on odd indexes are:  ");
+		for (int i = 0; i < word.length(); i++) {
+			if (i % 2 == 0) {
 				System.out.print(word.charAt(i) + " ");
 			}
 
