@@ -56,4 +56,14 @@ public class Strings {
 
 	}
 
+	public void ifCharIsntLetter(String word) {
+		System.out.print("Characters which are not letters:  ");
+		for (int i = 0; i < word.length(); i++) {
+			if (!Character.isLetter(word.charAt(i))) {
+				System.out.print(word.charAt(i) + " ");
+			}
+		}
+
+	}
+
 }
