@@ -1,20 +1,26 @@
 import static org.junit.Assert.*;
 
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class StringTest {
+public class StringsTest {
 	
-	String word;
+	Strings word;
 	
 	@Before
 	public void setUp() {
-		word = new String();
+		word = new Strings();
+	}
+	
+	@After
+	public void tearDown() {
+		
 	}
 
 	@Test
 	public void shouldBeGreenWhenStringLengthIsCorrect() {
-		int result = word.stringLength("Ervin");
+		int result = word.wordLength("Ervin");
 		assertEquals(5, result);
 	}
 
