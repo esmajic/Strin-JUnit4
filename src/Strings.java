@@ -8,7 +8,7 @@ public class Strings {
 
 	}
 	
-	public int numberOfUppercaseLetters(String word) {
+	public int numberOfUpperCaseLetters(String word) {
 		int counter1 = 0;
 		for (int i = 0; i < word.length(); i++) {
 			if (Character.isUpperCase(word.charAt(i))) {

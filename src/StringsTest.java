@@ -26,8 +26,14 @@ public class StringsTest {
 	
 	@Test
 	public void shouldBeGreenWhenNumberOfUpperCaseLettersMatch() {
-		int result = word.numberOfUppercaseLetters("Ervin");
+		int result = word.numberOfUpperCaseLetters("Ervin");
 		assertEquals(1, result);
+	}
+	
+	@Test
+	public void shouldBeGreenWhenNumberOfLowerCaseLettersMatch() {
+		int result = word.numberOfLowerCaseLetters("Ervin");
+		assertEquals(4, result);
 	}
 
 }
