@@ -23,5 +23,11 @@ public class StringsTest {
 		int result = word.wordLength("Ervin");
 		assertEquals(5, result);
 	}
+	
+	@Test
+	public void shouldBeGreenWhenLettersOnEvenIndexMatch() {
+		String result = word.listLettersOnEvenIndexes("Ervin");
+		assertEquals("E v n", result);
+	}
 
 }
