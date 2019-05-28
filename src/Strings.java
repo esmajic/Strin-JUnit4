@@ -7,7 +7,7 @@ public class Strings {
 		return stringLength;
 
 	}
-	
+
 	public int numberOfUpperCaseLetters(String word) {
 		int counter1 = 0;
 		for (int i = 0; i < word.length(); i++) {
@@ -18,5 +18,16 @@ public class Strings {
 		return counter1;
 
 	}
-	
+
+	public int numberOfLowerCaseLetters(String word) {
+		int counter2 = 0;
+		for (int i = 0; i < word.length(); i++) {
+			if (Character.isLowerCase(word.charAt(i))) {
+				counter2++;
+			}
+		}
+		return counter2;
+
+	}
+
 }
